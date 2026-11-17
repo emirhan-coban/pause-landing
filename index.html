@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pause — Sosyal anksiyete için yapay zekâ destekli mobil uygulama</title>
+<meta name="description" content="TÜBİTAK 2209-A destekli proje: sosyal anksiyete yönetimine yönelik, yapay zekâ destekli mobil uygulama. / TÜBİTAK 2209-A funded project: an AI-assisted mobile app for managing social anxiety.">
+<meta property="og:title" content="Pause — AI-assisted social anxiety app">
+<meta property="og:description" content="TÜBİTAK 2209-A funded research project. Flutter, Firebase and Gemini.">
+<meta property="og:image" content="assets/shots/home.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%235cc391'/%3E%3Crect x='10' y='9' width='4' height='14' rx='2' fill='white'/%3E%3Crect x='18' y='9' width='4' height='14' rx='2' fill='white'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="#top" aria-label="Pause">
+      <span class="logo" aria-hidden="true"><i></i><i></i></span>Pause
+    </a>
+    <nav class="links" aria-label="Sections">
+      <a href="#features"><span lang="tr">Özellikler</span><span lang="en">Features</span></a>
+      <a href="#screens"><span lang="tr">Ekranlar</span><span lang="en">Screens</span></a>
+      <a href="#tech"><span lang="tr">Teknik</span><span lang="en">Tech</span></a>
+      <a href="#results"><span lang="tr">Sonuçlar</span><span lang="en">Results</span></a>
+    </nav>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-set="tr" aria-pressed="true">TR</button>
+      <button type="button" data-set="en" aria-pressed="false">EN</button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-in">
+    <div class="hero-copy">
+      <span class="badge"><span lang="tr">TÜBİTAK 2209-A destekli araştırma projesi</span><span lang="en">TÜBİTAK 2209-A funded research project</span></span>
+      <h1>
+        <span lang="tr">Kaygı yükseldiğinde, <em>bir mola ver.</em></span>
+        <span lang="en">When anxiety rises, <em>take a pause.</em></span>
+      </h1>
+      <p class="lead">
+        <span lang="tr">Pause, sosyal anksiyete yaşayan üniversite öğrencileri için geliştirilen, yapay zekâ destekli ve kişiselleştirilmiş bir mobil uygulamadır: ruh hâli takibi, yargılamayan bir sanal arkadaş, nefes ve meditasyon, kademeli sosyal görevler.</span>
+        <span lang="en">Pause is an AI-assisted, personalized mobile app built for university students living with social anxiety: mood tracking, a non-judgmental virtual companion, breathing and meditation, and graded social tasks.</span>
+      </p>
+      <div class="cta">
+        <a class="btn primary" href="#screens"><span lang="tr">Ekranlara göz at</span><span lang="en">See the screens</span></a>
+        <a class="btn" href="#results"><span lang="tr">Pilot sonuçları</span><span lang="en">Pilot results</span></a>
+      </div>
+      <ul class="facts">
+        <li><b>6</b><span lang="tr">çekirdek modül</span><span lang="en">core modules</span></li>
+        <li><b>15</b><span lang="tr">gönüllü, 2 hafta pilot</span><span lang="en">volunteers, 2-week pilot</span></li>
+        <li><b>12</b><span lang="tr">ay, Nisan 2025 – Nisan 2026</span><span lang="en">months, Apr 2025 – Apr 2026</span></li>
+      </ul>
+    </div>
+    <div class="hero-phones" aria-hidden="false">
+      <figure class="phone p-back"><img src="assets/shots/dostai.png" alt="DostAI" loading="eager"></figure>
+      <figure class="phone p-front"><img src="assets/shots/home.png" alt="Ana sayfa / Home screen" loading="eager"></figure>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section class="band">
+  <div class="wrap narrow">
+    <h2><span lang="tr">Neden bu proje?</span><span lang="en">Why this project?</span></h2>
+    <p>
+      <span lang="tr">Sosyal anksiyete, kişinin sosyal ortamlarda olumsuz değerlendirilmekten yoğun kaygı duyduğu ve bu durumlardan kaçındığı yaygın bir ruh sağlığı sorunudur. Profesyonel desteğe erişimin zor, damgalanma korkusunun yüksek olduğu bir ortamda; her an yanında olan, yargılamayan ve kullanıcıyı küçük adımlarla cesaretlendiren dijital bir yardımcı fikrinden yola çıktık.</span>
+      <span lang="en">Social anxiety is a common mental-health condition marked by intense fear of being judged in social situations and avoidance of them. Where professional help is hard to reach and stigma runs high, we set out to build a digital companion that is always at hand, never judges, and encourages users through small, graded steps.</span>
+    </p>
+    <p class="note">
+      <span lang="tr">Pause bir tıbbi cihaz değildir ve tanı ya da tedavi yerine geçmez. Bir araştırma projesi olarak geliştirilmiştir.</span>
+      <span lang="en">Pause is not a medical device and does not replace diagnosis or treatment. It was built as a research project.</span>
+    </p>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section id="features" class="sec">
+  <div class="wrap">
+    <h2><span lang="tr">Altı çekirdek modül</span><span lang="en">Six core modules</span></h2>
+    <p class="sub"><span lang="tr">Kaygıyı izlemekten, onunla başa çıkmayı pratik etmeye kadar tek bir akışta.</span><span lang="en">From tracking anxiety to practising how to cope with it, in one flow.</span></p>
+
+    <div class="feat">
+      <article class="card">
+        <figure class="mini"><img src="assets/shots/mood.png" alt="" loading="lazy"></figure>
+        <h3><span lang="tr">Ruh hâli takibi</span><span lang="en">Mood tracking</span></h3>
+        <p><span lang="tr">Her akşam beş kademeli ölçekle günü puanla. Haftalık emoji ve grafik, kesintisiz gün (streak) ve yedi günlük ortalama ilerlemeni gösterir.</span><span lang="en">Rate each day on a five-step scale every evening. A weekly emoji strip and chart, streaks and a 7-day average show your progress.</span></p>
+      </article>
+      <article class="card">
+        <figure class="mini"><img src="assets/shots/dostai.png" alt="" loading="lazy"></figure>
+        <h3>DostAI</h3>
+        <p><span lang="tr">Google Gemini tabanlı sanal arkadaş. Yargılamadan dinler, empati kurar, sohbetler kalıcıdır ve sana ismenle hitap eder.</span><span lang="en">A virtual companion powered by Google Gemini. It listens without judgment, responds with empathy, keeps your conversations and addresses you by name.</span></p>
+      </article>
+      <article class="card">
+        <figure class="mini"><img src="assets/shots/journal.png" alt="" loading="lazy"></figure>
+        <h3><span lang="tr">Duygu günlüğü</span><span lang="en">Emotion journal</span></h3>
+        <p><span lang="tr">Serbest metinle yaz, geçmiş kayıtlara dön. Tetikleyicilerini fark etmen ve duygusal farkındalık kazanman için.</span><span lang="en">Write freely and revisit past entries to notice your triggers and build emotional awareness.</span></p>
+      </article>
+      <article class="card">
+        <figure class="mini"><img src="assets/shots/breath.png" alt="" loading="lazy"></figure>
+        <h3><span lang="tr">Rahatlatıcı medya</span><span lang="en">Calming media</span></h3>
+        <p><span lang="tr">Animasyonlu nefes egzersizleri (4-7-8, kutu nefesi), doğa sesleri, adım adım rehberli meditasyon ve motivasyon sözleri.</span><span lang="en">Animated breathing exercises (4-7-8, box breathing), nature sounds, step-by-step guided meditation and motivational quotes.</span></p>
+      </article>
+      <article class="card">
+        <figure class="mini"><img src="assets/shots/tasks.png" alt="" loading="lazy"></figure>
+        <h3><span lang="tr">Kademeli görevler</span><span lang="en">Graded tasks</span></h3>
+        <p><span lang="tr">Bilişsel-davranışçı kademeli maruz bırakma ilkesiyle beş seviye: aynada konuşmaktan, kafede sipariş vermeye. XP ve seviyelerle oyunlaştırılmış.</span><span lang="en">Five levels built on graded exposure from cognitive-behavioural therapy, from speaking to the mirror to ordering at a café. Gamified with XP and levels.</span></p>
+      </article>
+      <article class="card">
+        <figure class="mini"><img src="assets/shots/notifications.png" alt="" loading="lazy"></figure>
+        <h3><span lang="tr">Hatırlatmalar</span><span lang="en">Gentle reminders</span></h3>
+        <p><span lang="tr">Günde üç yerel bildirim: 21.00 ruh hâli, 21.30 günlük, 13.00 meditasyon önerisi.</span><span lang="en">Three local notifications a day: mood check at 21:00, journal at 21:30, meditation suggestion at 13:00.</span></p>
+      </article>
+    </div>
+
+    <div class="personal">
+      <h3><span lang="tr">Kişiselleştirme</span><span lang="en">Personalization</span></h3>
+      <p>
+        <span lang="tr">Ana sayfa herkes için aynı değildir. Motor; son yedi günün ruh hâlini, kayıtta seçilen ilgi alanlarını ve profil adını değerlendirir. Ruh hâli düşükse nefes egzersizi ya da DostAI, dengedeyse bir görev, yüksekse günlük yazmayı önerir; ilgi alanlarına göre kısayollar üretir.</span>
+        <span lang="en">The home screen is not the same for everyone. The engine looks at the last seven days of mood, the interests chosen at sign-up and the profile name. Low mood suggests breathing or DostAI, steady mood suggests a task, high mood suggests journaling, and interests become shortcuts.</span>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- SCREENS -->
+<section id="screens" class="sec alt">
+  <div class="wrap">
+    <h2><span lang="tr">Ekranlar</span><span lang="en">Screens</span></h2>
+    <p class="sub"><span lang="tr">Gerçek uygulamadan, pilot sürümde alınmış görüntüler. Yana kaydır.</span><span lang="en">Captured from the real app in the pilot build. Swipe sideways.</span></p>
+  </div>
+  <div class="rail" tabindex="0" aria-label="Screenshots">
+    <figure class="phone"><img src="assets/shots/onboarding.png" alt="Onboarding" loading="lazy"><figcaption><span lang="tr">Tanıtım</span><span lang="en">Onboarding</span></figcaption></figure>
+    <figure class="phone"><img src="assets/shots/home.png" alt="Home" loading="lazy"><figcaption><span lang="tr">Ana sayfa</span><span lang="en">Home</span></figcaption></figure>
+    <figure class="phone"><img src="assets/shots/home2.png" alt="Weekly chart" loading="lazy"><figcaption><span lang="tr">Haftalık grafik</span><span lang="en">Weekly chart</span></figcaption></figure>
+    <figure class="phone"><img src="assets/shots/mood.png" alt="Mood" loading="lazy"><figcaption><span lang="tr">Ruh hâli</span><span lang="en">Mood</span></figcaption></figure>
+    <figure class="phone"><img src="assets/shots/dostai.png" alt="DostAI" loading="lazy"><figcaption>DostAI</figcaption></figure>
+    <figure class="phone"><img src="assets/shots/journal.png" alt="Journal" loading="lazy"><figcaption><span lang="tr">Günlük</span><span lang="en">Journal</span></figcaption></figure>
+    <figure class="phone"><img src="assets/shots/tasks.png" alt="Tasks" loading="lazy"><figcaption><span lang="tr">Görevler</span><span lang="en">Tasks</span></figcaption></figure>
+    <figure class="phone"><img src="assets/shots/task-done.png" alt="Task completed" loading="lazy"><figcaption><span lang="tr">Kutlama</span><span lang="en">Celebration</span></figcaption></figure>
+    <figure class="phone"><img src="assets/shots/breath.png" alt="Breathing" loading="lazy"><figcaption><span lang="tr">Nefes</span><span lang="en">Breathing</span></figcaption></figure>
+    <figure class="phone"><img src="assets/shots/sounds.png" alt="Sounds" loading="lazy"><figcaption><span lang="tr">Sesler</span><span lang="en">Sounds</span></figcaption></figure>
+    <figure class="phone"><img src="assets/shots/meditation.png" alt="Meditation" loading="lazy"><figcaption><span lang="tr">Meditasyon</span><span lang="en">Meditation</span></figcaption></figure>
+    <figure class="phone"><img src="assets/shots/notifications.png" alt="Notifications" loading="lazy"><figcaption><span lang="tr">Bildirimler</span><span lang="en">Notifications</span></figcaption></figure>
+  </div>
+</section>
+
+<!-- TECH -->
+<section id="tech" class="sec">
+  <div class="wrap">
+    <h2><span lang="tr">Teknik mimari</span><span lang="en">Technical architecture</span></h2>
+    <p class="sub"><span lang="tr">Flutter ile tek kod tabanı; MVVM yaklaşımında üç katman, servis temelli veri erişimi.</span><span lang="en">One Flutter codebase; three MVVM-style layers with service-based data access.</span></p>
+
+    <div class="arch" role="img" aria-label="Architecture diagram">
+      <div class="layer l1">
+        <h4><span lang="tr">Sunum katmanı</span><span lang="en">Presentation</span></h4>
+        <div class="boxes"><span>Home</span><span>DostAI</span><span><span lang="tr">Görevler</span><span lang="en">Tasks</span></span><span><span lang="tr">Rahatlatıcı medya</span><span lang="en">Calming media</span></span><span><span lang="tr">Profil</span><span lang="en">Profile</span></span></div>
+      </div>
+      <div class="arrow">↓</div>
+      <div class="layer l2">
+        <h4><span lang="tr">İş mantığı</span><span lang="en">Business logic</span></h4>
+        <div class="boxes"><span>MoodService</span><span>JournalService</span><span>ChatService</span><span>NotificationService</span><span>SurveyService</span><span>PersonalizationService</span><span>AudioService</span><span>LevelViewModel</span></div>
+      </div>
+      <div class="arrow">↓</div>
+      <div class="layer l3">
+        <h4><span lang="tr">Veri katmanı</span><span lang="en">Data</span></h4>
+        <div class="boxes"><span>Cloud Firestore<small><span lang="tr">ruh hâli, günlük, sohbet, anket</span><span lang="en">moods, journal, chats, survey</span></small></span><span>Realtime Database<small><span lang="tr">profil, seviye, XP</span><span lang="en">profile, level, XP</span></small></span></div>
+      </div>
+      <div class="arrow">↓</div>
+      <div class="layer l4">
+        <div class="boxes"><span>Firebase Authentication<small><span lang="tr">e-posta + şifre, doğrulama</span><span lang="en">email + password, verification</span></small></span><span>Google Gemini API<small>DostAI</small></span></div>
+      </div>
+    </div>
+
+    <ul class="chips">
+      <li>Flutter · Dart</li><li>Firebase Auth</li><li>Cloud Firestore</li><li>Realtime Database</li><li>Firebase Analytics</li>
+      <li>Google Gemini</li><li>Provider</li><li>fl_chart</li><li>just_audio</li><li>flutter_local_notifications</li>
+    </ul>
+
+    <div class="two">
+      <div>
+        <h3><span lang="tr">Gizlilik ve güvenlik</span><span lang="en">Privacy and security</span></h3>
+        <p><span lang="tr">Her kullanıcının verisi kimlik doğrulama sonrası benzersiz kimliği (uid) altında yalıtılır. Ekranlar veriye yalnızca servis sınıfları üzerinden erişir. Dış servis anahtarları kaynak kodda tutulmaz. Saha testi, etik kurul onayı ve KVKK açık rızası kapsamında yürütüldü.</span><span lang="en">Each user's data is isolated under a unique ID after authentication, and screens reach data only through service classes. External API keys are kept out of the source code. The field test ran with ethics committee approval and explicit consent under Turkish data-protection law (KVKK).</span></p>
+      </div>
+      <div>
+        <h3><span lang="tr">Kod kalitesi</span><span lang="en">Code quality</span></h3>
+        <p><span lang="tr">Statik analiz (<code>flutter analyze</code>) ve saf iş mantığı için birim testleri: ruh hâli tarih anahtarı, emoji eşlemesi, görev XP toplamlarının seviye eşikleriyle uyumu.</span><span lang="en">Static analysis (<code>flutter analyze</code>) and unit tests for pure logic: mood date keys, emoji mapping, and task XP totals matching level thresholds.</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESULTS -->
+<section id="results" class="sec alt">
+  <div class="wrap">
+    <h2><span lang="tr">Pilot saha testi</span><span lang="en">Pilot field test</span></h2>
+    <p class="sub"><span lang="tr">İstanbul’da üniversite öğrencisi 15 gönüllü, iki hafta, uygulama içi anket (5’li Likert, ≥ 4 olumlu sayıldı).</span><span lang="en">15 university-student volunteers, two weeks, in-app survey (5-point Likert, ≥ 4 counted as positive).</span></p>
+
+    <div class="bars" role="list">
+      <div class="bar" role="listitem" style="--v:80"><span class="n"><span lang="tr">Ruh hâli takibi</span><span lang="en">Mood tracking</span></span><span class="t"><i></i></span><b>80%</b><small>12/15</small></div>
+      <div class="bar" role="listitem" style="--v:73"><span class="n"><span lang="tr">Duygu günlüğü</span><span lang="en">Emotion journal</span></span><span class="t"><i></i></span><b>73%</b><small>11/15</small></div>
+      <div class="bar" role="listitem" style="--v:73"><span class="n"><span lang="tr">Görev sistemi</span><span lang="en">Graded tasks</span></span><span class="t"><i></i></span><b>73%</b><small>11/15</small></div>
+      <div class="bar" role="listitem" style="--v:60"><span class="n">DostAI</span><span class="t"><i></i></span><b>60%</b><small>9/15</small></div>
+      <div class="bar" role="listitem" style="--v:60"><span class="n"><span lang="tr">Bildirimler</span><span lang="en">Notifications</span></span><span class="t"><i></i></span><b>60%</b><small>9/15</small></div>
+      <div class="bar" role="listitem" style="--v:53"><span class="n"><span lang="tr">Rahatlatıcı medya</span><span lang="en">Calming media</span></span><span class="t"><i></i></span><b>53%</b><small>8/15</small></div>
+    </div>
+
+    <div class="stats">
+      <div><b>73%</b><span lang="tr">genel memnuniyet (11/15)</span><span lang="en">overall satisfaction (11/15)</span></div>
+      <div><b>7.4/10</b><span lang="tr">ortalama tavsiye puanı</span><span lang="en">average recommendation score</span></div>
+      <div><b>2.8 → 3.6</b><span lang="tr">günlük ruh hâli ortalaması (1–5), 2 haftada</span><span lang="en">average daily mood (1–5) over two weeks</span></div>
+    </div>
+
+    <p class="note wide">
+      <span lang="tr"><strong>Nasıl okunmalı:</strong> Bu, küçük örneklemli (N = 15), kontrol grubu ve klinik ölçek içermeyen, öz-bildirime dayalı tanımlayıcı bir pilot çalışmadır. Sonuçlar klinik etkinlik kanıtı değil, öncül bir göstergedir. Uzun vadeli etkiler gelecek çalışmalara bırakılmıştır.</span>
+      <span lang="en"><strong>How to read this:</strong> a small (N = 15), self-reported, descriptive pilot with no control group or clinical scale. The numbers are a preliminary signal, not proof of clinical efficacy. Long-term effects are left to future work.</span>
+    </p>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="sec">
+  <div class="wrap narrow">
+    <h2><span lang="tr">Proje hakkında</span><span lang="en">About the project</span></h2>
+    <dl class="meta">
+      <dt><span lang="tr">Program</span><span lang="en">Programme</span></dt>
+      <dd>TÜBİTAK 2209-A <span lang="tr">Üniversite Öğrencileri Araştırma Projeleri Destek Programı</span><span lang="en">University Students Research Projects Support Programme</span></dd>
+      <dt><span lang="tr">Başlık</span><span lang="en">Title</span></dt>
+      <dd><span lang="tr">Sosyal Anksiyete Yönetimine Yönelik Yapay Zekâ Destekli Mobil Uygulama</span><span lang="en">AI-Assisted Mobile Application for Social Anxiety Management</span></dd>
+      <dt><span lang="tr">Süre</span><span lang="en">Duration</span></dt>
+      <dd><span lang="tr">12 ay (Nisan 2025 – Nisan 2026)</span><span lang="en">12 months (April 2025 – April 2026)</span></dd>
+      <dt><span lang="tr">Etik</span><span lang="en">Ethics</span></dt>
+      <dd><span lang="tr">Üniversite etik kurulundan etik yönden uygun görüş alındı</span><span lang="en">Approved by the university research ethics committee</span></dd>
+      <dt><span lang="tr">Dağıtım</span><span lang="en">Distribution</span></dt>
+      <dd><span lang="tr">Pilot sürüm Android paketi (APK) olarak test cihazlarında çalıştırıldı; mağazada yayında değildir.</span><span lang="en">The pilot build ran as an Android package (APK) on test devices; it is not published on any app store.</span></dd>
+    </dl>
+    <div class="source">
+      <h3><span lang="tr">Kaynak kod</span><span lang="en">Source code</span></h3>
+      <p><span lang="tr">Kaynak kod gizli bir depoda tutuluyor ve istek üzerine paylaşılabilir. Bu sayfayı hazırlayan, proje ekibinin bir üyesidir.</span><span lang="en">The source code lives in a private repository and can be shared on request. This page was prepared by a member of the project team.</span></p>
+      <a class="btn primary" href="https://github.com/emirhan-coban"><span lang="tr">GitHub profilim</span><span lang="en">My GitHub profile</span></a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span lang="tr">© 2026 Pause · Bu bir araştırma projesidir, tıbbi tavsiye değildir. TÜBİTAK, bu sayfanın içeriğinden sorumlu değildir.</span>
+    <span lang="en">© 2026 Pause · A research project, not medical advice. TÜBİTAK is not responsible for the content of this page.</span>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
